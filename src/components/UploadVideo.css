@@ -1,0 +1,25 @@
+.progressbar{
+    border: black 1px solid;
+    position: relative;
+    margin: 25vh 50vh;
+    padding: 50px 20px;
+    background-color: yellow;
+}
+body{
+    background-color:blue;
+    font-family: cursive;
+    font-size: 25px;
+}
+.upload-btn {
+    padding: 10px 10px;
+    border-radius:8px;
+  }
+  input {
+    float: left;
+    margin-top: 25px;
+  }
+  .upload-btn:hover {
+    background-color:blue;
+    transition: 0.7s;
+}
+  

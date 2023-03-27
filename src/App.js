@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <UploadVideo/>
+      <UploadVideo className="drag-drop-container" />
     </div>
   );
 }

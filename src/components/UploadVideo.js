@@ -15,7 +15,7 @@ const myBucket = new AWS.S3({
     region: REGION,
 })
 
-const UploadVideo = () => {
+const UploadVideo = ({className}) => {
     const [progress , setProgress] = useState(0);
     const [selectedFile, setSelectedFile] = useState(null);
     const [isRunning, setIsRunning]= useState(false);
@@ -32,7 +32,6 @@ const UploadVideo = () => {
             reader.onerror = () => console.log('file reading has failed')
             reader.onload = () => {
                 console.log(file)
-            // Do whatever you want with the file contents
               const binaryStr = reader.result
               console.log(binaryStr)
             }
@@ -72,7 +71,9 @@ const UploadVideo = () => {
         
         <input type="file" onChange={handleFileInput}/>
         <button className='upload-btn' onClick={() => uploadFile(selectedFile)}> Upload Video</button>
-        <div {...getRootProps()}>
+        <div {...getRootProps(
+            className={className}
+        )}>
         <input  {...getInputProps()} />
         {
           isDragActive ?

@@ -3,7 +3,7 @@
     position: relative;
     margin: 25vh 50vh;
     padding: 50px 20px;
-    background-color: yellow;
+    background-color:whitesmoke;
 }
 body{
     background-color:blue;
@@ -21,5 +21,6 @@ body{
   .upload-btn:hover {
     background-color:blue;
     transition: 0.7s;
+    color: white
 }
   
